@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Demo</title>
+</head>
+<body>
+  <form action="" method="post">
+
+    <div class="name">
+      <label for="name">姓名：</label>
+      <input id="name" name="name" type="text" placeholder="用户名">
+    </div>
+
+    <div class="password">
+      <label for="password">密码：</label>
+      <input id="password" name="password" type="password">
+    </div>
+
+    <div class="gender">
+      <label>
+        性别：
+        <input id="male" name="gender" value="male" type="radio">
+        <label for="male">男</label>
+        <input id="female" name="gender" value="female" type="radio">
+        <label for="female">女</label>
+      </label>
+    </div>
+
+    <div class="sex-ori">
+      <label>
+        取向：
+        <input id="to-male" name="sex-ori" value="to-male" type="radio">
+        <label for="to-male">男</label>
+        <input id="to-female" name="sex-ori" value="to-female" type="radio">
+        <label for="to-female">女</label>
+      </label>
+    </div>
+
+    <div class="hobby">
+      <label>
+        爱好：
+        <input id="dota" name="hobby" value="dota" type="checkbox">
+        <label for="dota">dota</label>
+        <input id="travel" name="hobby" value="travel" type="checkbox">
+        <label for="travel">旅游</label>
+        <input id="pet" name="hobby" value="pet" type="checkbox">
+        <label for="pet">宠物</label>
+      </label>
+    </div>
+
+    <div class="comment">
+      <label for="comment">评论：</label>
+      <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+    </div>
+
+    <div class="my-car">
+      <label for="my-car">我的car：</label>
+      <select name="myCar" id="my-car">
+        <option value="lacrosse">君越</option>
+        <option value="highlander">汉兰达</option>
+        <option value="landcruiser">陆地巡洋舰</option>
+      </select>
+    </div>
+
+    <input type="submit">
+  </form>
+</body>
+</html>
