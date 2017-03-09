@@ -7,9 +7,6 @@ tab.addEventListener('click', function(event) {
     [].forEach.call(node.children, function(element) {
       element.classList.remove('active')
     })
-    // for (var i = 0; i < node.children.length; i++) {
-    //   node.children[i].classList.remove('active')
-    // }
   }
   if (clickNode.tagName.toLowerCase() === 'li') {
     clearActiveItems(tab)
