@@ -1,18 +1,10 @@
-var tab = document.querySelector('.tab')
-var content = document.querySelector('.content')
+var tabs = $('.tabs > li')
+var contents = $('.contents > li')
 
-tab.addEventListener('click', function(event) {
-  var clickNode = event.target
-  function clearActiveItems(node) {
-    [].forEach.call(node.children, function(element) {
-      element.classList.remove('active')
-    })
-  }
-  if (clickNode.tagName.toLowerCase() === 'li') {
-    clearActiveItems(tab)
-    clickNode.classList.add('active')
-    var index = [].indexOf.call(tab.children, clickNode)
-    clearActiveItems(content)
-    content.children[index].classList.add('active')
-  }
+tabs.on('click', function() {
+    var activeTab = $(this)
+    tabs.removeClass('active')
+    activeTab.addClass('active')
+    contents.removeClass('active')
+    contents.eq(activeTab.index()).addClass('active')
 })

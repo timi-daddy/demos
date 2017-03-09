@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 ul {
@@ -22,23 +23,23 @@ ul {
   border-radius: 4px;
 }
 
-.tab {
+.tabs {
   border-bottom: 1px solid #ccc;
 }
 
-.content {
+.contents {
   padding: 20px 10px;
 }
 
-.content > li {
+.contents > li {
   display: none;
 }
 
-.content > .active {
+.contents > .active {
   display: block;
 }
 
-.tab > li {
+.tabs > li {
   float: left;
   cursor: pointer;
   color: #1c96de;
@@ -47,7 +48,7 @@ ul {
   border-bottom: none;
 }
 
-.tab > .active {
+.tabs > .active {
   border: 1px solid #ccc;
   border-bottom-color: #fff;
   border-radius: 4px 4px 0 0;
